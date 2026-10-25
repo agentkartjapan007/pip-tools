@@ -3,6 +3,9 @@ name: QA
 on:
   workflow_call:
 
+permissions:
+  contents: read
+
 jobs:
   qa:
     name: ${{ matrix.toxenv }}
